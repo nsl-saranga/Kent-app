@@ -12,6 +12,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     background-color: white;
+    z-index: 1000;
    
 }
 
@@ -25,7 +26,7 @@ img{
   
     display: flex;
     border-radius: 14%;
-    background-color:#cfe6c5;
+    background-color:#7cd158;
     width: 80%;
     height: 100%;
 
@@ -39,7 +40,7 @@ img{
     justify-content: space-between;
 }
 .in-group input[type="text"] {
-    background-color:#cfe6c5;
+    background-color:#e7eee5;
     border: none;
     width:93%;
     outline: none;
@@ -53,7 +54,7 @@ img{
 .icon-container-search{
     width:7%;
     height: 100%;
-    background-color: #2F99D1;
+    background-color: #0079bb;
     border-radius: 14%;
     display: flex;
     flex-direction: column;
@@ -76,8 +77,8 @@ img{
     
     
 }
-.btn{
-    background-color:#bde0ad;
+.btn-navbar{
+    background-color:#176f9e;
     color:black;
     font-size: 1.205rem;
     font-weight: bold;
@@ -87,8 +88,12 @@ img{
     text-align: center;
     border: none;
 }
+.custom-button {
+    background-color:#083f5e ;  /* Replace with your desired color */
+ /* Optional: Set text color */
+  }
 .btn:hover{
-    background-color: #2F99D1;
+    background-color: #ec8a19;
 }
 .extra{
     display:none;
@@ -104,7 +109,7 @@ height: 100%;
 
 }
 .login_singup-container a{
-    color:black;
+    color:#176f9e ;
     text-decoration: none;
     font-weight: bold;
     font-size:1rem ;
@@ -117,12 +122,13 @@ height: 100%;
 .user{
     height: 100%;
     font-size: 2em;
+    color:#2F99D1;
 }
 
 .user:hover{
     height: 100%;
     font-size: 2em;
-    color:#2F99D1;
+    color:#7cd158;
 }
 
 @media(max-width:1100px)

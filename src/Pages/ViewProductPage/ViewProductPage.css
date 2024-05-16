@@ -1,0 +1,153 @@
+.page-content-view{
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+
+.prduct-details-container{
+  /* background-color: aqua; */
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.product-details-column{
+  display: flex;
+  flex-direction: column;
+
+  
+
+}
+.product-column-1{
+align-items: center;
+width: 40%;
+}
+
+.product-column-2{
+align-items: flex-start;
+width:45%;
+text-align: justify;
+
+
+}
+.product-details-column img{
+  width: 50%;
+height: auto;
+
+
+
+}
+/* NumericUpDown.css */
+
+
+.stock-status{
+color:blue;
+}
+
+.styled-hr {
+border: none; /* Remove the default border */
+border-top: 2px solid #04091d; /* Create a solid border line */
+width: 100%; /* Set the width of the line */
+/* Center the line and add vertical spacing */
+}
+
+
+
+
+
+
+
+
+
+.card-btn {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #007bff; /* Primary blue color */
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+background-color: #0056b3; /* Darker blue on hover */
+}
+
+.card-btn:focus {
+outline: none;
+box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Outline on focus */
+}
+
+.card-btn:active {
+background-color: #004085; /* Even darker blue on click */
+}
+
+.card-btn-icon {
+margin-right: 8px; /* Space between icon and text */
+font-size: 18px; /* Adjust icon size */
+}
+
+/* Optional: Add styles for disabled state */
+.card-btn:disabled {
+background-color: #6c757d; /* Gray color for disabled state */
+cursor: not-allowed;
+}
+
+.all-reviews{
+justify-content: flex-start;
+padding-top: 3rem;
+flex-wrap: wrap;
+
+}
+.view-reviws-div{
+cursor: 'pointer';
+
+}
+.view-reviws-div:hover{
+color:blue;
+}
+
+
+@media(max-width:1030px)
+{
+  .prduct-details-container{
+    display: flex;
+    width: 100%;
+    /* flex-direction: column; */
+    align-items: center;
+    margin-top: 0rem;
+  }
+  .product-details-column{
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+
+  }
+  .product-column-2 p{
+    padding: 2rem;
+
+  }
+  .product-details-column img{
+  width: 50%;
+  height: auto;
+ 
+  margin: auto;
+  
+
+}
+.all-reviews{
+  justify-content: center;
+ 
+}
+  
+ 
+}

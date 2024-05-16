@@ -1,30 +1,27 @@
+import React from 'react';
 import NavBar from '../../Components/NavBar/NavBar';
 import SideBar from '../../Components/SideBar/SideBar';
-import SelectMenu from '../../Components/SelectMenu/SelectMenu';
-import Card from '../../Components/Card/Card';
-import './HomePage.css'
+import HomeCarousel from '../../Components/HomeCorousel/HomeCorousel';
+import Footer from '../../Components/Footer/Footer';
+import './HomePage.css';
+import logoImage from '../../assets/logo.jpg'
 
-function HomePage() {
+const HomePage = () => {
   return (
     <>
-      <NavBar/>
-      <div className='page-content'>
-        <SideBar/>
-        <div className='page-column'>
-          <SelectMenu/>
-          <div className='card-container'>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+     <NavBar value={""}/>
+      <div className='home-page-container'>  {/* New container */}
+       <div className='home-page-row'>
+       <SideBar/>
+          <div className='page-column-corousel'>
+            <HomeCarousel />
           </div>
-        </div>
+       </div>
       </div>
+     
+  
     </>
-  )     
-}
+  );
+};
 
 export default HomePage;

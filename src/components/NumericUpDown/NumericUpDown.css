@@ -1,0 +1,60 @@
+.numeric-up-down {
+    display: flex;
+    align-items: center;
+    /* margin-top: 1rem; */
+    
+    
+  }
+  .numeric-up-down h6{
+    margin-right: 1rem;
+  
+  }
+
+  
+
+.number-input {
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #5f2fb9;
+    border-radius: 0;
+    font-size: 16px;
+    outline: none;
+    -moz-appearance: textfield;
+  }
+  
+  /* Hide default arrows in number input (for Chrome, Safari, Edge, and Opera) */
+  .number-input::-webkit-outer-spin-button,
+  .number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Hide default arrows in number input (for Firefox) */
+  .number-input {
+    -moz-appearance: textfield;
+  }
+  
+  .btn-decrement,
+  .btn-increment {
+    width: 30px;
+    height: 30px;
+    background-color: #5f2fb9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .btn-decrement:hover,
+  .btn-increment:hover {
+    background-color: #0056b3;
+  }
+
+  

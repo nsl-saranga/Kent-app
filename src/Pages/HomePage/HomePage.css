@@ -1,18 +1,40 @@
-.page-content{
+.home-page-container {
     display: flex;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 2rem;
-}
+    min-height: 100vh;  
+    flex-direction: column; 
+    background-color: #e3e3e3 ;
+    align-items: center;
+  }
 
-.page-column{
-    width: 100%;
-
-}
-.card-container{
+  .home-page-row{
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
     justify-content: flex-start;
-    padding: 1rem;
-}
+  }
+  
+  /* Content column (adjust width and margin as needed) */
+  .page-column-corousel {
+    width: 70%;
+    margin-top: 1.5rem; 
+    /* Set desired width */
+    /* margin-left: 5rem;  Set desired margin */
 
+    margin-left: 2rem;
+   
+  }
+  @media(max-width:1030px)
+  {
+    .home-page-row{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+    .page-column-corousel
+    {
+      width: 80%;
+    }
+     
+  }
+
+  

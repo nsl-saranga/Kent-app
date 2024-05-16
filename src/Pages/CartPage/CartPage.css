@@ -1,0 +1,38 @@
+.page-content-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+.shopping-cart{
+    background-color: #e3e3e3;
+    width: 75%;
+    border-radius:1%;
+    margin-bottom: 2rem;
+
+}
+.styled-hr {
+    border: none; /* Remove the default border */
+    border-top: 2px solid #04091d; /* Create a solid border line */
+    width: 100%; /* Set the width of the line */
+   /* Center the line and add vertical spacing */
+  }
+
+.checkout-details{
+    width: 100%;
+    padding: 1rem;
+    text-align: right;
+}
+  
+
+
+@media(max-width:927px)
+  {
+    .shopping-cart{
+        width: 95%;
+
+    }
+  }
+  
+
