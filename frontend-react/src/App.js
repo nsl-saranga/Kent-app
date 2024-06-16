@@ -8,6 +8,8 @@ import Footer from './Components/Footer/Footer';
 import SearchedProductsPage from './Pages/SearchedProductsPage/SearchedProductsPage'
 import ViewProductsPage from './Pages/ViewProductPage/ViewProductPage'
 import CartPage from './Pages/CartPage/CartPage';
+import LoginPage from './Pages/Login/Login';
+import RegisterPage from './Pages/Register/Register'
 
 function App() {
   return (
@@ -16,10 +18,12 @@ function App() {
         <div id='page-body'>
           <Routes>
             <Route path='/' element={<HomePage/>}></Route>
-            <Route path='/:productId' element={<ProductsPage/>}></Route>
-            <Route path='/:category/:product' element={< ViewProductsPage/>}></Route>
+            <Route path='/:productType' element={<ProductsPage/>}></Route>
+            <Route path='/:product/details' element={< ViewProductsPage/>}></Route>
             <Route path='/search' element={<SearchedProductsPage />} />
             <Route path='/cart' element={<CartPage/>}></Route>
+            <Route path='/login' element={<LoginPage/>}></Route>
+            <Route path='/register' element={<RegisterPage/>}></Route>
             <Route path='*' element={<NotFoundPage/>}></Route>
           </Routes> 
         <Footer className="Footer"/>

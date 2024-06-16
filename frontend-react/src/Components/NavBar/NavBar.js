@@ -1,24 +1,34 @@
 import React, { useState } from 'react';
-import logoImage from '../../assets/logo.jpg';
+import logoImage from '../../assets/logo.jpg'; // Assuming the logo path is correct
 import './NavBar.css';
 import { BiSolidHome, BiSolidUser } from 'react-icons/bi';
 import { FaShoppingCart, FaBell, FaSearch } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = ({value}) => {
+  const navigate = useNavigate();
   const [searchInput, setSearchInput] = useState(value);
 
   const handleInputChange = (event) => {
     setSearchInput(event.target.value);
   };
 
-  const handleIconClick = () => {
-    window.location.href = `/search?q=${searchInput}`;
-  };
-  const viewCart = () => {
-    window.location.href = `/cart`;
+  const handleSearchSubmit = () => {
+    if (searchInput) {
+      navigate(`/search?q=${searchInput}`);
+    }
   };
 
+  const viewCart = () => {
+    navigate(`/cart`);
+  };
+
+  const login = () => {
+    navigate(`/login`);
+  };
+  const register = () => {
+    navigate(`/register`);
+  };
   return (
     <div className="nav-bar">
       <img src={logoImage} alt="Kent Logo Image" />
@@ -31,15 +41,15 @@ const NavBar = ({value}) => {
             value={searchInput}
             onChange={handleInputChange}
           />
-          <div className="icon-container-search" onClick={handleIconClick}>
+          <button type="button" className="icon-container-search" onClick={handleSearchSubmit}>
             <FaSearch className="search-icon" />
-          </div>
+          </button>
         </div>
         <div className="all-icons-container">
-          <button type="button" className="btn btn-sm btn-navbar">
+          <button type="button" className="btn btn-sm btn-navbar" onClick={() => navigate('/')}>
             <BiSolidHome />
           </button>
-          <button onClick={viewCart} type="button" className="btn btn-secondary btn-sm btn-navbar">
+          <button type="button" className="btn btn-secondary btn-sm btn-navbar" onClick={viewCart}>
             <FaShoppingCart />
           </button>
           <button type="button" className="btn btn-secondary btn-sm btn-navbar">
@@ -49,7 +59,8 @@ const NavBar = ({value}) => {
       </div>
       <div className="login_singup-container">
         <div className="regLogin">
-          <a href="#">Login</a> | <a href="#">Register</a>
+          <div onClick={login}>Login</div>
+          <div onClick={register}>Register</div>
         </div>
         <BiSolidUser className="user" />
       </div>

@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 .product-details-column{
   display: flex;
@@ -108,12 +108,11 @@ padding-top: 3rem;
 flex-wrap: wrap;
 
 }
-.view-reviws-div{
-cursor: 'pointer';
 
-}
 .view-reviws-div:hover{
 color:blue;
+
+cursor: pointer;
 }
 
 

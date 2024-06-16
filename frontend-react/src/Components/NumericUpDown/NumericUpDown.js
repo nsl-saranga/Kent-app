@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './NumericUpDown.css'
 
-const NumericUpDown=()=>{
+const NumericUpDown=({stock})=>{
     const min = 0
-    const max =50
+    const max = parseInt(stock, 10);
     const step=1
     const[numericValue, setNumericValue]=useState(min)
 
