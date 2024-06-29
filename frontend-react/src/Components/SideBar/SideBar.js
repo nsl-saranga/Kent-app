@@ -1,5 +1,5 @@
 import './SideBar.css'
-import Products from '../../Data/data';
+
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import axios from 'axios'
@@ -17,8 +17,6 @@ const SideBar=()=>{
     
       loadProductTypeInfo();
     }, []);
-
-   
     
     return (
         <div className="container-categories">
@@ -26,9 +24,9 @@ const SideBar=()=>{
           <ul>
             {productTypes ? (
               productTypes.map((productType) => (
-                <li key={productType}>
-              <Link key={productType} to={`/${productType}`}>
-                {productType}
+                <li key={productType.categoryName}>
+              <Link key={productType.categoryName} to={`/${productType.categoryName}`}>
+                {productType.categoryName}
               </Link>
             </li>
               ))

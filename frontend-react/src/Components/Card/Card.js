@@ -1,6 +1,4 @@
 import './Card.css';
-import yoghurtImage from '../../assets/yoghurt.jpg';
-import Products from '../../Data/data';
 import { useNavigate } from 'react-router-dom';
 
 const Card = ({product}) => {
